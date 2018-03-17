@@ -696,33 +696,6 @@ switch (toLower typeOf _obj) do {
 		_cargoInfo = ["Land_Cargo20_grey_F",[0.045,-2.31,1.15],270,{_this setVariable ['bis_disabled_Door_1',1]; _this setVariable ['bis_disabled_Door_2',1]}];
 		[_obj, _side, _cargoInfo, _composition] call CHHQ_fnc_startingSetup;
 	};
-	case (toLower "I_Truck_02_transport_F"): {
-		_composition = [["CamoNet_INDP_big_F",[0.0947266,-0.0610352,0.0315285],345.578],["Land_PowerGenerator_F",[-2.4873,2.33643,0.0315285],182.122],["Land_WaterTank_F",[3.85596,0.42627,0.0315242],4.92499],["Land_CampingTable_F",[-2.77075,-1.10254,0.031528],276.314],["Land_CampingChair_V1_F",[-3.8562,-0.631348,0.0346532],288.003],["Land_Cargo10_military_green_F",[3.70703,-2.79932,0.0315285],274.286]];	
-		_cargoInfo = ["Land_Cargo10_military_green_F",[0.07,-2,0.5],270];		
-		[_obj, _side, _cargoInfo, _composition] call CHHQ_fnc_startingSetup;
-	};
-	case (toLower "O_Truck_03_transport_F"): {
-		_composition = [["Land_PowerGenerator_F",[-2.74097,0.837891,0.0376329],182.12],["Land_CampingTable_F",[-3.02441,-2.60107,0.0376248],276.309],["Land_CampingChair_V1_F",[-4.10986,-2.13037,0.0407581],288.114],["Land_FieldToilet_F",[4.37451,-0.489258,0.0376129],195.192],["Land_Cargo10_sand_F",[3.79224,-3.17822,0.0376348],285.205],["CamoNet_OPFOR_big_F",[0,-0.568848,0.119837],350.522]];
-		_cargoInfo = ["Land_Cargo10_sand_F",[0.07,-3.46,0.8],270];
-		[_obj, _side, _cargoInfo, _composition] call CHHQ_fnc_startingSetup;
-	};
-	case (toLower "B_G_Van_01_transport_F"): {
-		_composition = [["CamoNet_BLUFOR_big_F",[0.0947266,-0.0610352,0.0315285],345.578],["Land_Portable_generator_F",[-2.4873,2.33643,0.0315285],182.122],["Land_WaterBarrel_F",[3.85596,0.42627,0.0315242],4.92499],["Land_CampingTable_F",[-2.77075,-1.10254,0.031528],276.314],["Land_CampingChair_V1_F",[-3.8562,-0.631348,0.0346532],288.003],["CargoNet_01_box_F",[3.70703,-2.79932,0.0315285],274.286]];
-		_cargoInfo = ["CargoNet_01_box_F",[0,-1.2,0],0];
-		[_obj, _side, _cargoInfo, _composition] call CHHQ_fnc_startingSetup;	
-	};
-	case (toLower "rhsusf_m113d_usarmy_unarmed");
-	case (toLower "rhsusf_m113_usarmy_unarmed"): {
-		_composition = [["CamoNet_BLUFOR_big_F",[0.0947266,-0.0610352,0.0315285],345.578],["Land_Portable_generator_F",[-2.4873,2.33643,0.0315285],182.122],["Land_WaterBarrel_F",[3.85596,0.42627,0.0315242],4.92499],["Land_CampingTable_F",[-2.77075,-1.10254,0.031528],276.314],["Land_CampingChair_V1_F",[-3.8562,-0.631348,0.0346532],288.003],["CargoNet_01_box_F",[3.70703,-2.79932,0.0315285],274.286]];
-		_cargoInfo = ["CargoNet_01_box_F",[0.35,-1,-1.5],0];
-		[_obj, _side, _cargoInfo, _composition] call CHHQ_fnc_startingSetup;	
-	};
-	case (toLower "UK3CB_BAF_LandRover_Snatch_Green_A");
-	case (toLower "UK3CB_BAF_LandRover_Snatch_FFR_NI_A"): {
-		_composition = [["CamoNet_BLUFOR_big_F",[0.0947266,-0.0610352,0.0315285],345.578],["Land_TripodScreen_01_large_F",[-4.4873,2.33643,0.0315285],180],["Land_Portable_generator_F",[-2.4873,2.33643,0.0315285],182.122],["Vysilacka",[-2.77075,-1.10254,0.80],20.314],["Land_CampingTable_F",[-2.77075,-1.10254,0.031528],276.314],["CargoNet_01_box_F",[3.70703,-2.79932,0.0315285],274.286]];
-		_cargoInfo = ["CargoNet_01_box_F",[0,-1.5,-0.4],0];
-		[_obj, _side, _cargoInfo, _composition] call CHHQ_fnc_startingSetup;	
-	};
 	default {
 		waitUntil {!isNil "CHHQ_HQarray"};
 		[_obj] call CHHQ_fnc_updateTeleportActions;
